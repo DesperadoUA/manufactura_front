@@ -1,0 +1,182 @@
+.vacancy
+{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .title_vacancy
+    {
+        text-align: center;
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 30px;
+        color: #f15b5a;
+        margin-bottom: 20;
+    }
+    .vacancy_container
+    {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .vacancy_wrapper
+    {
+        overflow: hidden;
+        width: 1130px;
+    }
+    .vacancy_box
+    {
+       transition: 0.7s;
+    }
+    .vacancy_item
+    {
+        margin: 10px;
+        width: 355px;
+        float:left;
+        box-shadow: 4px 4px 2px 0 rgba(0,0,0,.07);
+        text-align: center;
+        padding-bottom: 50px;
+        img
+        {
+            max-width: 100%;;
+        }
+        &:hover
+        {
+            box-shadow: 20px 20px 4px 0 rgba(0,0,0,.07); 
+        }
+    }
+   
+    .vacancy_item_title
+    {
+        margin-top: 10px;
+        text-align: center;
+        color: #f15b5a;
+        font-family: "Merriweather-Regular";
+        font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .vacancy_item_desc
+    {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        color: #19191a;
+        font-family: "Open Sans",sans-serif;
+        font-size: 15px;
+    }
+   
+    .vacancy_button li
+    {
+        display: inline-block;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+    .vacancy_button li:hover
+    {
+        background: #0097b0!important;
+    }
+    .vacancy_button li span
+    {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .vacancy_button li:first-child
+    {
+        padding: 10px 20px;
+        background: #f15b5a;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        position: relative;
+    }
+    .vacancy_button li:last-child
+    {
+        padding: 10px 20px;
+        background: rgba(241,91,90,0.6);
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        position: relative;
+        margin-left: -4px;
+    }
+    
+    .vacancy_button li:first-child:before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+    }
+    
+    .slider_vacancy_left, .slider_vacancy_right
+    {
+        position: absolute;
+        top: 220px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .slider_vacancy_left
+    {
+        left:-100px;
+    }
+    .slider_vacancy_right
+    {
+        right:-100px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px)
+{
+    .vacancy
+    {
+        .slider_vacancy_left
+        {
+            left:5px;
+        }
+        .slider_vacancy_right
+        {
+            right:5px;
+        }
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .vacancy
+    {
+        .title_vacancy
+        {
+            line-height: 40px;
+        }
+        .slider_vacancy_left
+        {
+            left:5px;
+        }
+        .slider_vacancy_right
+        {
+            right:5px;
+        }
+        .vacancy_button li a
+        {
+            font-size:11px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .vacancy
+    {
+        .title_vacancy
+        {
+            line-height: 40px;
+        }
+        .slider_vacancy_left
+        {
+            left:5px;
+        }
+        .slider_vacancy_right
+        {
+            right:5px;
+        }
+    }
+}

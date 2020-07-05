@@ -1,0 +1,385 @@
+.programs_page_template
+{
+    .section_1
+    {
+        background: url(/template/images/woman.jpg) top center no-repeat;
+        padding-bottom: 90px;
+        h1
+        {
+            font-family: "Merriweather-Regular";
+            font-weight: 400;
+            font-size: 52px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        p
+        {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .breadcrump_wrapper
+        {
+            padding-left: 0px;
+            margin-top: 175px;
+        }
+    }
+    .section_2
+    {
+        padding-top: 50px;
+        padding-bottom: 90px;
+       .program_item
+       {
+          border: 1px solid #f15b5a;
+          box-shadow: 12px 12px 4px 0px rgba(0,0,0,0.07);
+          transition:0.7s;
+          &:hover
+          {
+            box-shadow: 22px 22px 4px 0px rgba(0,0,0,0.07);
+          }
+          &:hover
+          {
+            border: 1px solid #0097b0;
+          }
+          &:hover .program_item_title, .program_item_last p, .program_item_buy a
+          {
+              color: #0097b0;
+          }
+          &:hover .program_item_last p 
+          {
+              color: #0097b0;
+          }
+          &:hover .program_item_buy a
+          {
+              color: #0097b0;
+          }
+          &:hover .program_item_price
+          {
+              background: #0097b0;
+          }
+          
+          .program_item_title
+          {
+            color: #f15b5a;
+            text-transform: uppercase;
+            font-family: "Merriweather-Regular";
+            font-weight: 300;
+            font-size: 21px;
+            line-height: 1.3;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 65px;
+            padding-bottom: 45px;
+          }
+          .program_item_desc
+          {
+              padding-left: 50px;
+              padding-right: 20px;
+              ul
+              {
+                font-size: 16px;
+                line-height: 1.2;
+                color: #19191a;
+                font-family: "Open Sans",sans-serif;
+                margin-bottom: 30px;
+                li
+                {
+                    margin-bottom: 10px;
+                }
+              }
+          }
+          .program_item_price
+          {
+              transition: 0.7s;
+              background: #f15b5a;
+              padding: 20px;
+              color: #fff;
+              font-family: "Merriweather-Regular";
+              font-weight: 300;
+              font-size: 18px;
+              line-height: 1.3;
+              text-align: center;
+          }
+          .program_item_last
+          {
+              padding: 40px 60px 80px 60px;
+          }
+          .program_item_last p
+          {
+              color: #9b7373;
+              font-size: 14px;
+              line-height: 1.7;
+              text-align: center;
+              margin-bottom: 10px;
+          }
+          .program_item_buy
+          {
+              margin-top: 30px;
+          }
+          .program_item_buy a
+          {
+            color: #f15b5a;
+            font-family: "Merriweather-Regular";
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 1.1;
+            letter-spacing: 0px;
+            text-decoration: underline;
+          }
+       }
+    }
+    .section_3
+    {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+    .section_4
+    {
+        padding-top: 120px;
+        padding-bottom: 90px;
+        .program_title
+        {
+            color:#0097b0;
+            font-family: "Merriweather-Regular";
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 1.3;
+            text-align: center;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+        .program_wrapper
+        {
+            display: flex;
+        }
+        .card_wrapper
+        {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            .big_card
+            {
+                width: 95%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                margin-bottom: 20px;
+                box-shadow: 4px 4px 2px 0 rgba(0,0,0,.07);
+                img
+                {
+                    width: 100%;
+                }
+                .program_text_first
+                {
+                    font-family: Open Sans,sans-serif;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 2.4;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+                .program_text_second
+                {
+                    font-family: "Merriweather-Regular";
+                    font-weight: 400;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    color: #0097b0;
+                }
+
+
+                .big_card_left
+                {
+                    max-width: 40%;
+                    overflow: hidden;
+                    position: relative;
+                }
+                .card_edge {
+                    position: absolute;
+                    z-index: 2;
+                    top:0;
+                    right: 0;
+                    max-width: 40px;
+                    height: 100%;
+                }
+                .big_card_right
+                {
+                    width: 60%;
+                    background: #fff;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    .big_card_right_wrapper
+                    {
+                        padding-right: 50px;
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+   
+  
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px)
+{
+    .programs_page_template
+    {
+        .section_4
+        {
+            .card_wrapper
+            {
+                .big_card
+                {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .programs_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_1
+        {
+            background: url(/template/images/about.jpg) 50% 70% no-repeat;
+            background-repeat: repeat-x;
+            padding-bottom: 75px;
+            h1
+            {
+                color: #fff;
+                font-size: 25px;
+            }
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+            p
+            {
+                margin-bottom: 30px;
+            }
+            .breadcrump_wrapper
+            {
+                margin-top: 30px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+        .program_item
+        {
+            margin-bottom: 40px;
+        }
+        .section_4
+        {
+            .program_wrapper, .big_card
+            {
+                flex-wrap: wrap;
+                img {
+                    height: 100%;
+                }
+                .card_wrapper
+                {
+                    width: 100%;
+                    .big_card
+                    {
+                        width: 100%;
+                        height: auto;
+                        .big_card_right_wrapper
+                        {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                    }
+                    width: 100%;
+                    .big_card_left
+                    {
+                        width: 40%;
+                        max-width: 100%;
+                    }
+                    .big_card_right
+                    {
+                        width: 60%;
+                        padding-bottom: 30px;
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .programs_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_1
+        {
+            background: url(/template/images/about_mobile.jpg) top center/cover no-repeat;
+            background-repeat: repeat-x;
+            padding-bottom: 50px;
+            h1
+            {
+                color: #fff;
+                font-size: 25px;
+            }
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+            p
+            {
+                margin-bottom: 30px;
+            }
+            .breadcrump_wrapper
+            {
+                margin-top: 30px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+        .program_item
+        {
+            margin-bottom: 40px;
+        }
+        .section_4
+        {
+            .program_wrapper, .big_card
+            {
+                flex-wrap: wrap;
+                .card_wrapper
+                {
+                    .big_card
+                    {
+                        width: 100%;
+                        height: auto;
+                        .big_card_right_wrapper
+                        {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                    }
+                    width: 100%;
+                    .big_card_left, .big_card_right
+                    {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                    .big_card_right
+                    {
+                        padding-bottom: 30px;
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.contact_page_template
+{  
+  .section_1
+  {
+      background: url(/template/images/header-2.jpg) top center no-repeat;
+      padding-bottom: 130px;
+      .left_part
+      {
+        padding-right: 50px;
+      }
+      .right_part
+      {
+        padding-left: 50px;
+        ul
+        {
+          padding-left: 20px;
+        }
+      }
+  }
+  h1
+  {
+       text-align: center;
+       font-family: "Merriweather-Regular";
+       font-weight: 300;
+       font-size: 30px;
+       color: #0097b0;
+  }
+  .titel
+  {
+    color:#f15b5a;
+    font-family: "Merriweather-Regular";
+    font-weight: 300;
+    font-size: 22px;
+  }
+  .map_part
+  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .padding_first_section
+   {
+       padding-top: 240px;
+   }
+  .category_contact_wrapper 
+  {
+      padding-top: 50px;
+  }
+  .text_trip
+  {
+    padding-top: 45px;
+    ul
+    {
+      padding-left: 50px;
+      line-height: 30px;
+    }
+  }
+  .color_blue
+  {
+    margin-top: 40px;
+    color: #0097b0;
+  }
+  .category_contact_wrapper ul li:before {
+    z-index: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .contact_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .right_part
+            {
+              padding-left: 15px;
+            }
+        }
+        .map_part
+        {
+          img
+          {
+            width: 100%;
+            max-width: 100%;
+          }
+          iframe
+          {
+            height: 245px;
+          }
+        }
+      }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .contact_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .right_part
+            {
+              padding-left: 15px;
+            }
+        }
+        .map_part
+        {
+          img
+          {
+            max-width: 100%;
+          }
+        }
+      }
+}

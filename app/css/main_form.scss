@@ -1,0 +1,150 @@
+.section_main_form
+{
+    background: url(/template/images/bg_form.jpg);
+    background-attachment: fixed;
+    padding-top: 110px;
+}
+.main_form_title
+{
+    color: #0097b0;
+    font-family: 'Merriweather-Regular';
+    font-weight: 400;
+    font-size:33px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main_form_label
+{
+    color: #19191a;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 10px;
+}
+.section_main_form input[type="text"], .section_main_form select, .section_main_form textarea,
+.section_main_form input[type="date"]
+{
+    width:100%;
+    height: 50px;
+    background: #fff;
+    border:none;
+    border-bottom: 3px solid #0097b0;
+    border-radius: 4px;
+    margin-bottom: 10px; 
+    padding-left: 15px;
+}
+.section_main_form textarea {
+    padding-top: 10px;
+}
+.section_main_form .button_style
+{
+    margin-top: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 0px;
+}
+label
+{
+    margin-left: 10px;
+    color: #575757;
+    font-size: 15px;
+    font-family: "Open Sans",sans-serif;
+}
+.section_main_form input[type="checkbox"]
+{
+    margin-top: 10px;
+}
+/* Стилизация блока логина */
+.login_wrapper
+{
+    display: flex;
+}
+.login_item
+{
+    width:33.3333%;
+    height:215px;
+    display: flex;
+    background: #0097b0;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.login_item:nth-child(2n)
+{
+    background: #0092aa;
+}
+.login_link
+{
+    color: #fff;
+    font-family: 'Merriweather-Regular';
+    font-weight: 400;
+    font-size:20px;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container_login
+{
+    text-align: center;
+}
+.block_error_main
+{
+    margin-top: 20px;
+    margin-bottom: 160px;
+    p{
+        margin-bottom: 0px;
+        color: red;
+    }
+}
+/* Конец стилизация блока логина */
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+        .section_main_form
+    {
+        background: url(/template/images/search_form_mobile.jpg) no-repeat;
+        background-size: cover;
+    }
+    .main_form_title
+    {
+        line-height: 33px;
+    }
+    .section_main_form .block_error_main
+    {
+        margin-bottom: 70px;
+    }
+    .login_wrapper
+    {
+        flex-wrap: wrap;
+    }
+    .login_item
+    {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .section_main_form 
+    {
+        padding-top: 50px;
+
+        .button_style
+        {
+            margin-bottom: 20px;
+        }
+        .login_wrapper
+        {
+            flex-wrap: wrap;
+        }
+        .login_item
+        {
+            border: 1px solid rgba(255,255,255,.3);
+        }
+        .block_error_main {
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+    }
+}
+

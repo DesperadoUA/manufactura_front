@@ -1,0 +1,104 @@
+.shares_page_template
+{
+    .section_1
+    {
+        background: url(/template/images/shares.jpg) top center no-repeat;
+        padding-bottom: 100px;
+    }
+    h1
+    {
+        font-family: "Merriweather-Regular";
+        font-weight: 400;
+        font-size: 52px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .buy_online
+    {
+        width:180px;
+        height:45px;
+        border:none;
+        font-family: Open Sans, sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #fff;
+        transition: 0.7s;
+        cursor: pointer;
+        background: #0097b0;
+        transition: 0.7s;
+        margin-bottom: 310px;
+        &:hover
+        {
+            background: #f15b5a;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .shares_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top  no-repeat;
+            background-repeat: repeat-x;
+            padding-bottom: 50px;
+            h1
+            {
+                color: #fff;
+                font-size: 25px;
+            }
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+            p
+            {
+                margin-bottom: 30px;
+                color: #19191a;
+            }
+        }
+        .buy_online
+        {
+            margin-bottom: 50px;
+        }
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .shares_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top  no-repeat;
+            background-repeat: repeat-x;
+            padding-bottom: 50px;
+            h1
+            {
+                color: #fff;
+                font-size: 25px;
+            }
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+            p
+            {
+                margin-bottom: 30px;
+                color: #19191a;
+            }
+        }
+        .buy_online
+        {
+            margin-bottom: 50px;
+        }
+    }
+}

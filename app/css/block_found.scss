@@ -1,0 +1,138 @@
+.section_block_found
+    {
+        padding-top:60px;
+        padding-bottom: 50px;
+        background: url(/template/images/search-2.jpg) 50% 100%;
+        background-attachment: fixed;
+        .tab_title
+        {
+          display: flex;
+          overflow: hidden;
+        }
+        .tab_item
+        {
+            width: 25%;
+            padding-right: 5px;
+        }
+        .tab_item:last-child
+        {
+            padding-right: 0px;
+        }
+        .tab_block
+        {
+            height: 50px;
+            background-color: rgba(255,255,255,0.9);
+            text-align: center;
+            line-height: 50px;
+            color: #0097b0;
+            font-family: 'Merriweather-Regular';
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.7s;
+            &:hover
+            {
+                background: #0097b0;
+                color: #fff;
+            }
+        }
+        .activ_tab
+        {
+            background-color: rgba(255,255,255,1)!important;
+        }
+        .activ_tab:hover
+        {
+          color: #0097b0;
+        }
+        .serch_line
+        {
+            text-align: center;
+            background: #fff;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .main_find_input
+        {
+            height: 40px;
+            width:250px;
+            text-align: center;
+            border: none;
+           // background: url(/template/images/find_header.png) 35% 50% no-repeat;
+        }
+        .main_find_input:focus
+        {
+          background: #fff;
+        }
+          .serch_line input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-family: "Open Sans",sans-serif;
+          }
+          .serch_line input::-moz-placeholder { /* Firefox 19+ */
+            font-family: "Open Sans",sans-serif;
+          }
+          .serch_line input:-ms-input-placeholder { /* IE 10+ */
+            font-family: "Open Sans",sans-serif;
+          }
+          .serch_line input:-moz-placeholder { /* Firefox 18- */
+            font-family: "Open Sans",sans-serif;
+          }
+         
+    }
+    .found_result
+    {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: none;
+    }
+    .found_result_row
+    {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      img
+      {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .not_found
+    {
+      font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 1.1;
+        color: #f15b5a;
+        text-align: center;
+    }
+    .title_found
+    {
+      a
+      {
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 33px;
+        line-height: 1.1;
+        color: #0097b0;
+      }
+    }
+.section_block_desc {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+  {
+    .section_block_found
+    {
+      background: #0097b2;
+      .tab_title
+      {
+        flex-wrap: wrap;
+      }
+      .tab_item
+      {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
+    }
+  }

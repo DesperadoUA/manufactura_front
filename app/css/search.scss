@@ -1,0 +1,44 @@
+.result_img, .result_desc
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    img
+    {
+        max-width: 100%;
+    }
+}
+.mobile_found {
+    display: none;
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .search_page_template
+    {
+        .found_result
+        {
+            width: auto;
+        }
+    }
+    .mobile_found {
+        display: block;
+    }
+    .mobile_found input {
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        border: none;
+        border-bottom: 3px solid #0097b0;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+    .search_template
+    {
+        width:auto;
+        .category_doc_wrapper
+        {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+}

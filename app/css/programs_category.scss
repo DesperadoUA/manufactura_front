@@ -1,0 +1,245 @@
+.programs_category_template
+{
+   .section_1
+   {
+       background: url(/template/images/header-2.jpg) top center no-repeat;
+       padding-bottom: 100px;
+   }
+   h1
+   {
+        text-align: center;
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 30px;
+        color: #0097b0;
+   }
+   .program_wrapper
+   {
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .card_wrapper
+   {
+       width: 50%;
+   }
+   .wraper_button_news
+   {
+        padding: 20px 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+   .button_news
+   {
+        margin: 10px;
+        background: #9dabad;
+        border-radius: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 10px;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: .7s;
+        cursor: pointer;
+        &:hover
+        {
+            background: #0097b0!important;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+   }
+   .card_wrapper
+    {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            margin-top:30px;
+            margin-bottom: 30px;
+            .big_card
+            {
+                width: 95%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                margin-bottom: 20px;
+                box-shadow: 4px 4px 2px 0 rgba(0,0,0,.07);
+                img
+                {
+                    width: 100%;
+                    display: block;
+                }
+                .program_text_first
+                {
+                    font-family: Open Sans,sans-serif;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 2.4;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+                .program_text_second
+                {
+                    font-family: "Merriweather-Regular";
+                    font-weight: 400;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    color: #0097b0;
+                }
+
+
+                .big_card_left
+                {
+                    max-width: 40%;
+                    overflow: hidden;
+                    position: relative;
+                }
+                .card_edge {
+                    position: absolute;
+                    z-index: 2;
+                    top:0;
+                    right: 0;
+                    max-width: 40px;
+                    height: 100%;
+                }
+                
+                .big_card_right
+                {
+                    width: 60%;
+                    background: #fff;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    .big_card_right_wrapper
+                    {
+                        padding-right: 50px;
+                        padding-left: 15px;
+                    }
+                }
+            }
+    }
+    .show_more
+    {
+        text-align: center;
+        button
+        {
+            text-decoration: underline;
+            color: #0097b0;
+            background: transparent;
+            border: none;
+            font-family: "Merriweather-Regular";
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px)
+{
+    .programs_category_template 
+    {
+        .card_wrapper 
+        {
+            .big_card
+            {
+                height: auto;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .programs_category_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+        }
+       .card_wrapper
+       {
+           width: 100%;
+           .big_card
+           {
+               height: auto;
+               flex-wrap: wrap;
+               .big_card_left, .big_card_right
+                {
+                    max-width: 100%;
+                    width:100%;
+                }
+                .big_card_right
+                {
+                    padding: 20px 15px;
+                    .big_card_right_wrapper
+                    {
+                        padding: 0px;
+                    }
+                }
+           }
+       }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .programs_category_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+        }
+       .card_wrapper
+       {
+           width: 100%;
+           .big_card
+           {
+               height: auto;
+               flex-wrap: wrap;
+               .big_card_left
+                {
+                    max-width: 100%;
+                    width:40%;
+                }
+                .big_card_right
+                {
+                    width:60%;
+                    padding: 20px 15px;
+                    .big_card_right_wrapper
+                    {
+                        padding: 0px;
+                    }
+                }
+           }
+       }
+    }
+}

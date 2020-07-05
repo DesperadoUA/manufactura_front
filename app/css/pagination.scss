@@ -1,0 +1,32 @@
+.pagination_container
+{
+    padding-top: 40px;
+    text-align: center;
+
+    .pagination
+    {
+        list-style: none;
+        font-family: 'Merriweather-Regular';
+             font-weight: 400;
+             font-size: 18px;
+        li
+        {
+            display: inline-block;
+            padding: 5px;
+            margin-bottom: 0px;
+            a
+            {
+                text-decoration: none;
+                color: #0097b0;
+            }
+        }
+        li:before {
+            width: 0px;
+            height: 0px;
+        }
+        .active a
+            {
+              color: #f15b5a;
+            }
+    }
+}

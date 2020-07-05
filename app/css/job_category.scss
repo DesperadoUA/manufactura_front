@@ -1,0 +1,151 @@
+.job_page_template
+{
+   .section_1
+   {
+       background: url(/template/images/header-2.jpg) top center no-repeat;
+       padding-bottom: 130px;
+       .container_job
+       {
+           margin-top: 50px;
+       }
+       .wraper_button_review
+       {
+           padding: 10px;
+           padding-top: 20px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .button_review
+        {
+            margin: 10px;
+            background: solid #9dabad;
+            border-radius: 30px;
+            text-transform: uppercase;
+            color: #fff;
+            font-size:10px;
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: 0.7s;
+            &:hover
+            {
+                background: #0097b0!important;
+            }
+        }
+        .button_review:last-child
+        {
+            background: #f15b5a;
+        }
+   }
+   h1
+   {
+        text-align: center;
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 30px;
+        color: #0097b0;
+   }
+   .job_item
+   {
+       margin-bottom: 30px;
+       box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.07);
+       padding: 60px 90px;
+       background: #fff;
+   }
+   .job_section_1
+   {
+       display: flex;
+       img
+       {
+           border-radius: 50%;
+           width:50px;
+           height:50px;
+       }
+   }
+   .job_date
+   {
+        color: #f15b5a;
+        font-family: Open Sans, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+   }
+   .job_name
+   {
+        color: #0097b0;
+        font-family: "Merriweather-Regular";
+        font-weight: 400;
+        font-size: 22px;
+   }
+   .job_link span
+   {
+        color: #fff;
+        font-family: "Open Sans",sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        transition:0.7s;
+        display: inline-block;
+        padding: 10px 20px;
+        background: #f15b5a;
+        cursor: pointer;
+        &:hover
+        {
+            background: #0097b0;
+            text-decoration: none;
+        }
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .job_page_template
+    {
+        h1
+        {
+            color: #fff;
+        }
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+        }
+        .job_item
+        {
+            padding: 20px 15px;
+        }
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .job_page_template
+    {
+        h1
+        {
+            color: #fff;
+        }
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+        }
+        .job_item
+        {
+            padding: 20px 15px;
+        }
+    }
+    
+}

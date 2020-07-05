@@ -1,0 +1,212 @@
+.qa_category_template
+{
+   .section_1
+   {
+       background: url(/template/images/header-2.jpg) top center no-repeat;
+       padding-bottom: 130px;
+   }
+   .padding_first_section
+   {
+       padding-top: 240px;
+   }
+   h1
+   {
+        text-align: center;
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 30px;
+        color: #0097b0;
+   }
+  
+   .category_qa_wrapper
+   {
+       padding-top: 30px;
+   }
+   .wraper_button_news
+   {
+        padding: 20px 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+   .button_news, .button_qa
+   {
+        margin: 10px;
+        background: #9dabad;
+        border-radius: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 10px;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: .7s;
+        cursor: pointer;
+   }
+   
+   .button_qa {
+    background: #f15b5a;
+     &:hover {
+       background: #0097b0;
+     }
+    }
+
+    .container_qa
+    {
+        box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.07);
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 90px;
+    }
+    .asc
+    {
+        padding:40px 90px 15px 90px;
+        background: #fff;
+        img 
+        {
+            border-radius: 50%;
+        }
+        .name
+        {
+            padding-left: 20px;
+            line-height: 50px;
+            margin-bottom: 0px;
+            color: #f15b5a;
+            font-family: "Merriweather-Regular";
+            font-weight: 400;
+            font-size: 22px;
+        }
+        .asc_wrapper
+        {
+            display: flex;
+        }
+        .text_asc
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family: Georgia,Times,serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.7;
+            font-style: italic;
+        }
+    }
+    .ansver
+    {
+        padding:40px 90px 65px 90px;
+        background: #e3ebef;
+        .ansver_wrapper
+        {
+            display: flex;
+            .ansver_logo
+            {
+                min-width: 70px;
+                align-items: center;
+                display: flex;
+                img
+                {
+                    border-radius: 50%;
+                }
+            }
+            .ansver_text p
+            {
+                color: #0097b0;   
+                margin-bottom: 0px;             
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .qa_category_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .wraper_button_news
+            {
+                flex-wrap: wrap;
+            }
+        }
+        .category_qa_wrapper
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .asc, .ansver
+        {
+            padding: 20px 15px;
+        }
+        .ansver_wrapper
+        {
+            flex-wrap: wrap;
+        }
+        .ansver_logo .ansver_text
+        {
+            width: 100%;
+        }
+        .ansver_text
+        {
+            padding-top: 30px;
+        }
+        .container_qa
+        {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .qa_category_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .wraper_button_news
+            {
+                flex-wrap: wrap;
+            }
+        }
+        .asc, .ansver
+        {
+            padding: 20px 15px;
+        }
+        .ansver_wrapper
+        {
+            flex-wrap: wrap;
+        }
+        .ansver_logo .ansver_text
+        {
+            width: 100%;
+        }
+        .ansver_text
+        {
+            padding-top: 30px;
+        }
+        .container_qa
+        {
+            margin-bottom: 20px;
+        }
+    }
+}

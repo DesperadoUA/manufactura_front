@@ -1,0 +1,45 @@
+.breadcrumbs {
+  padding-top: 30px;
+  padding-left: 0px;
+  font-size: 0px;
+  span {
+    padding: 0px 10px;
+    display: inline-block;
+    transition: 0.7s;
+    position: relative;
+    color: #2da0b5;
+    font-family: Open Sans,sans-serif;
+    font-size: 13px;
+    &:before {
+      content: "";
+      position: absolute;
+      width:1px;
+      height:16px;
+      right:0px;
+      bottom:0px;
+      background: #2da0b5;
+    }
+    &:hover a {
+      color: #2da0b5;
+    }
+    a {
+      text-decoration: none;
+      color: #2da0b5;
+    }
+  }
+  span:last-child {
+    &:before {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  .breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    span {
+      border-right: none;
+      text-align: center;
+    }
+  }
+}

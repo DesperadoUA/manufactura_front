@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: admin
+Disallow: /images
+Disallow: /search
+
+
+
+Sitemap: https://manufacturaclinica.com/sitemap.xml

@@ -1,0 +1,151 @@
+.price_direction
+{
+    padding-top: 90px;
+    padding-bottom: 115px;
+    background: #f4f4f4;
+    p
+    {
+        text-align: center;
+    }
+    .price_title
+    {
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 30px;
+        color: #0097b0;
+        margin-bottom: 45px;
+    }
+    .price_accordeon
+    {
+        min-height: 45px;
+        background: #fff;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        padding-left: 55px;
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.1em;
+        text-align: left;
+        padding-top: 10px;
+        color: #0097b0;
+        display: flex;
+        cursor: pointer;
+        &:hover .price_cross
+        {
+            color: #0097b0;
+        }
+        &:hover  .accordeon_title
+        {
+            color: #f15b5a;
+        }
+        .price_cross
+        {
+            font-size: 35px;
+            font-weight: 900;
+            color: #f15b5a;
+            margin-right: 15px;
+            position: relative;
+            display: inline-block;
+            padding-top: 4px;
+        }
+        .accordeon_title
+        {
+            padding-top: 5px;
+        }
+    }
+    .price_wrapper
+    {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        display: none;
+        justify-content: center;
+    }
+    .price_box
+    {
+        width:80%;
+        margin: 0 auto;
+    }
+    .price_row
+    {
+        display: flex;
+        .price_row_title
+        {
+            width:75%;
+            border:1px solid #f4f4f4;
+            background: #fff;
+            padding: 10px;
+            font-size: 16px;
+            font-family: "Merriweather-Regular";
+            font-weight: 300;
+            padding-left: 35px;
+        }
+        .price_number
+        {
+            width:25%;
+            border:1px solid #f4f4f4;
+            background: #fff;
+            padding: 10px;
+            font-size: 16px;
+            font-family: "Merriweather-Regular";
+            font-weight: 300;
+            padding-left: 35px;
+            color: #f15b5a;
+        }
+    }
+    .price_row:first-child .price_row_title
+    {
+        background: #0097b0;
+        color: #fff;
+        font-weight: 400;
+        padding-left: 15px;
+    }
+    .price_row:first-child .price_number
+    {
+        background: #0097b0;
+        color: #fff;
+        font-weight: 400;
+        padding-left: 15px;
+        color: #fff;
+    }
+    .buy_online
+    {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        button
+        {
+            text-transform: uppercase;
+            color: #fff;
+            background: #0097b0;
+            cursor: pointer;
+            transition: 0.7s;
+            padding: 20px 65px;
+            border:0px;
+            &:hover
+            {
+                background: #f15b5a;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .price_direction
+    {
+        .price_box
+        {
+            width:95%;
+        }
+        .price_wrapper
+        {
+            padding-top: 20px;
+            .price_number
+            {
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+}

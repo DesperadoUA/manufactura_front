@@ -1,0 +1,33 @@
+.page_template_404
+{
+    background: url("/template/images/404.jpg");
+    h1
+    {
+      font-family: "Merriweather-Regular";
+      font-size: 111px;
+      text-transform: uppercase;
+      color: white;
+    }
+    .section_1 {
+      min-height: auto;
+    }
+}
+.desc_page
+{
+  font-family: "Merriweather-Regular";
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0px;
+}
+.link_button
+{
+    background: #1697ae;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Merriweather-Regular";
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

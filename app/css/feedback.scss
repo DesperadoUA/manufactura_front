@@ -1,0 +1,171 @@
+.feedback_page_template
+{
+   .section_1
+   {
+       background: url(/template/images/header-2.jpg) top center no-repeat;
+       padding-bottom: 130px;
+       .wraper_button_review
+       {
+           padding: 10px;
+           padding-top: 20px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .button_review
+        {
+            margin: 10px;
+            background: #9dabad;
+            border-radius: 30px;
+            text-transform: uppercase;
+            color: #fff;
+            font-size:10px;
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: 0.7s;
+            cursor: pointer;
+        }
+        .button_review:last-child
+        {
+            background: #f15b5a;
+            &:hover
+            {
+                background: #0097b0!important;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+        }
+     .button_news
+     {
+       margin: 10px;
+       background: #9dabad;
+       border-radius: 30px;
+       text-transform: uppercase;
+       color: #fff;
+       font-size: 10px;
+       width: 200px;
+       height: 30px;
+       line-height: 30px;
+       letter-spacing: 2px;
+       text-align: center;
+       position: relative;
+       transition: .7s;
+       cursor: pointer;
+       position: relative;
+
+     }
+   }
+   h1
+   {
+        text-align: center;
+        font-family: "Merriweather-Regular";
+        font-weight: 300;
+        font-size: 30px;
+        color: #0097b0;
+   }
+   .reviews_item
+   {
+       margin-bottom: 30px;
+       box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.07);
+       padding: 60px 90px;
+       background: #fff;
+   }
+   .review_section_1
+   {
+       display: flex;
+       img
+       {
+           border-radius: 50%;
+           width:50px;
+           height:50px;
+       }
+   }
+   .review_date
+   {
+        color: #f15b5a;
+        font-family: Open Sans, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-left: 15px;
+        margin-bottom: 10px;
+   }
+   .review_date p
+   {
+    color: #f15b5a;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+   }
+   .review_name
+   {
+        color: #0097b0;
+        font-family: "Merriweather-Regular";
+        font-weight: 400;
+        font-size: 22px;
+        padding-left: 15px;
+        margin-bottom: 5px;
+   }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .feedback_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+            .reviews_item
+            {
+                padding: 20px 15px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .feedback_page_template
+    {
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        h1
+        {
+            color: #fff;
+        }
+        .section_1
+        {
+            background: url(/template/images/header-2_mobile.jpg) top;
+            background-repeat: repeat-x;
+            .wraper_button_review
+            {
+                flex-wrap: wrap;
+            }
+            .reviews_item
+            {
+                padding: 20px 15px;
+            }
+        }
+    }
+}

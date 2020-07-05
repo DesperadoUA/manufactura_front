@@ -1,0 +1,369 @@
+.about_page_template
+{
+    overflow: hidden;
+    max-width: 100%;
+    .section_1
+    {
+        background: url(/template/images/about_bg.jpg) top center no-repeat;
+        height: 800px;
+        h1
+        {
+            color: #fff;
+            font-size: 52px;
+            font-family: 'Merriweather-Regular';
+            margin-bottom: 20px;
+            font-weight: 900;
+            letter-spacing: 50px;
+        }
+        p
+        {
+            color: #fff;
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: left;
+            font-family: "Open Sans",sans-serif;
+            font-weight: 400px;
+            margin-bottom: 180px;
+        }
+    }
+    .section_2
+    {
+       padding-bottom: 90px;
+       padding-top: 90px;
+       box-shadow: 0px 22px 22px 0px rgba(0,0,0,0.07);
+       h2
+       {
+            font-family: Merriweather-Light;
+            font-weight: 300;
+            font-size: 41px;
+            color: #f15b5a;
+            text-align: center;
+            margin-bottom: 25px;
+       }
+    }
+    .section_3
+    {
+        padding-top:90px;
+        box-shadow: 0px 22px 22px 0px rgba(0,0,0,0.07);
+        h2
+        {
+            text-align: center;
+            font-family: "Merriweather-Regular";
+            font-weight: 300;
+            font-size: 30px;
+            color: #0097b0;
+        }
+        .service_row
+        {
+            display: flex;
+            .left_block, .right_block
+            {
+                width:50%;
+                padding-top: 50px;
+            }
+            .left_block
+            {
+                text-align: right;
+                padding-left: 12%;
+                padding-right: 15px;
+                .service_title
+                {
+                    text-align: right;
+                }
+            }
+            .right_block
+            {
+                text-align: left;
+                padding-right: 12%;
+                padding-left: 15px;
+            }
+            .service_title
+            {
+                font-family: 'Merriweather-Regular';
+                font-size: 24px;
+            }
+            
+        }
+        .stacionar_for_adults
+            {
+                background: url(/template/images/consulting-white.jpg);
+                min-height: 550px;
+            }
+        .rehabilitation
+        {
+            background: url(/template/images/stacionar_gray.jpg);
+                min-height: 550px;
+        }
+        .surgery
+        {
+            background: url(/template/images/0001_03.jpg);
+            min-height: 550px;
+        }
+        .diagnostics
+        {
+            background: url(/template/images/reab-gray.jpg);
+            min-height: 550px;
+        }
+        .service_button_red, .service_button_blue
+        {
+            width: 260px;
+            height: 55px;
+            background: #f15b5a;
+            color: #fff;
+            border:none;
+            cursor:pointer;
+            transition: 0.7s;
+            font-family: Open Sans, sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1;
+            text-transform: uppercase;
+            &:hover
+            {
+                background: #0097b0;
+            }
+        }
+        .service_button_blue
+        {
+            background: #0097b0;
+            &:hover
+            {
+                background: #f15b5a;
+            }
+        }
+        .background_gray
+        {
+            background-color: #f4f4f4;
+        }
+    }
+    .section_4
+    {
+        padding-top: 110px;
+        background: #f1f1f1;
+        padding-bottom: 90px;
+        .tur_title
+        {
+            text-align: center;
+            font-family: "Merriweather-Regular";
+            font-weight: 300;
+            font-size: 30px;
+            color: #0097b0;
+            line-height: 40px;
+        }
+        .container_galery
+        {
+            display: flex;
+            margin-top: 45px;
+        }
+        .galery_column
+        {
+            width:25%;
+        }
+       .galery_wrapper_item
+       {
+           border:1px solid #fff;
+           cursor:pointer;
+           position: relative;
+           overflow: hidden;
+       }
+       .galery_hover_item
+       {
+           opacity: 0;
+           transition: 0.7s;
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           left:0px;
+           top:0px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background: rgba(0,151,176,0.8);
+           z-index: 2;
+       }
+       .galery_wrapper_item img
+       {
+           transition: 0.7s;
+           display: block;
+       }
+       .galery_hover_item img
+       {
+        width:52px;
+       }
+       .galery_wrapper_item:hover .galery_hover_item
+       {
+           opacity: 1;
+       }
+       .galery_wrapper_item:hover img
+       {
+           transform: scale(1.1);
+       }
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 767px)
+{
+    .about_page_template
+    {
+        .section_1
+        {
+            background: url(/template/images/about_mob.jpg) top center no-repeat;
+            background-size: cover;
+            height: auto;
+            padding-bottom: 50px;
+            h1
+            {
+                font-size: 25px;
+            }
+            p
+            {
+                margin-bottom: 50px;
+            }
+        }
+        .section_2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_3
+        {
+            .service_row
+            {
+                flex-wrap:wrap;
+                padding-bottom: 30px;
+                .left_block, .right_block
+                {
+                    width:100%;
+                }
+                .right_block, .left_block
+                {
+                    padding: 20px 15px;
+                    text-align: left!important;
+                } 
+                .service_title
+                {
+                    text-align: left!important;
+                    line-height: 35px;
+                }
+            }
+            .service_row:nth-child(odd)
+            {
+                flex-direction: column-reverse;
+                background: #f4f4f4;
+            }
+            .rehabilitation, .surgery, .diagnostics, .stacionar_for_adults {
+                min-height: 200px;
+                background-size: cover;
+            }
+        }
+        .section_4
+        {
+            .container_galery
+            {
+                flex-wrap: wrap;
+            }
+            .galery_column
+            {
+                width: 100%;
+            }
+        }
+        .galery_wrapper_item img {
+            width: 100%;
+        }
+        .galery_wrapper_item  {
+            display: none;
+        }
+        .galery_column:nth-child(1) .galery_wrapper_item:nth-child(1) {
+            display: block;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .about_page_template
+    {
+        .section_1
+        {
+            background: url(/template/images/about_bg.jpg);
+            background-size: contain;
+            height: auto;
+            padding-bottom: 50px;
+            h1
+            {
+                font-size: 25px;
+            }
+            p
+            {
+                margin-bottom: 50px;
+            }
+            
+        }
+        .section_2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .padding_first_section
+        {
+            padding-top: 75px;
+        }
+        .section_3
+        {
+            .service_row
+            {
+               flex-wrap: wrap;
+                .left_block, .right_block
+                {
+                    width:100%;
+                }
+                .right_block, .left_block
+                {
+                    padding: 20px 15px 40px;
+                    text-align: left!important;
+                } 
+                .service_title
+                {
+                    text-align: left!important;
+                    line-height: 35px;
+                }
+
+            }
+            .service_row:nth-child(odd){
+                flex-direction: column-reverse;
+            }
+            .service_row:nth-child(odd)
+            {
+                background: #f4f4f4;
+            }
+            .rehabilitation, .surgery, .diagnostics, .stacionar_for_adults {
+                min-height: 400px;
+                background-size: cover;
+            }
+        }
+        .section_4
+        {
+            .container_galery
+            {
+                flex-wrap: wrap;
+            }
+            .galery_column
+            {
+                width: 50%;
+            }
+            .galery_wrapper_item img
+            {
+                width: 100%;
+            }
+            .galery_column {
+                display: none;
+            }
+            .galery_column:nth-child(1) {
+                display: block;
+            }
+            .galery_column:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+}
